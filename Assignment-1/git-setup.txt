@@ -1,0 +1,6 @@
+cd D:\collage\2302031800086\
+git init
+
+git add .
+git commit -m "Your commit message"
+git push -u origin main

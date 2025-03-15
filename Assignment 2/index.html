@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Driven Career Guidance</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">AI Career Navigator</div>
+            <nav class="navbar">
+                <ul class="nav-links">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#career-guidance">Career Guidance</a></li>
+                    <li><a href="#register">Register</a></li>
+                    <li><a href="#login">Login</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Explore Your Future Career Path</h2>
+            <p>Discover your potential with our AI-driven assessments.</p>
+            <a href="#assessment" class="cta-button">Start Your Journey</a>
+            <a href="#contact" class="cta-button">Reach Out</a>
+        </div>
+    </section>
+
+    <main class="container">
+        <section id="assessment">
+            <h2>Assess Your Skills and Interests</h2>
+            <form id="careerForm">
+                <label for="skills">What are your skills? (comma-separated)</label>
+                <input type="text" id="skills" name="skills" required>
+
+                <label for="interests">What are your interests? (comma-separated)</label>
+                <input type="text" id="interests" name="interests" required>
+
+                <button type="submit">Get Career Suggestions</button>
+            </form>
+        </section>
+
+        <section id="suggestions">
+            <h2>Suggested Career Paths</h2>
+            <div class="card-container" id="suggestedCareers"></div>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="service-card">
+                <h3>Career Assessment</h3>
+                <p>Get a detailed analysis of your skills and interests.</p>
+            </div>
+            <div class="service-card">
+                <h3>Skill Gap Analysis</h3>
+                <p>Identify areas for improvement and growth.</p>
+            </div>
+            <div class="service-card">
+                <h3>Resume Building</h3>
+                <p>Create a professional resume that stands out.</p>
+            </div>
+            <div class="service-card">
+                <h3>Interview Preparation</h3>
+                <p>Prepare for interviews with expert tips and mock sessions.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form id="contactForm">
+                <label for="contactName">Name:</label>
+                <input type="text" id="contactName" name="contactName" required>
+
+                <label for="contactEmail">Email:</label>
+                <input type="email" id="contactEmail" name="contactEmail" required>
+
+                <label for="contactMessage">Message:</label>
+                <textarea id="contactMessage" name="contactMessage" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <section id="privacy-policy">
+            <h2>Privacy Policy</h2>
+            <p>Your privacy is important to us. We do not share your information with third parties without your consent.</p>
+        </section>
+
+        <section id="references">
+            <h2>References</h2>
+            <ul>
+                <li>Author, A. (Year). Title of the work. Publisher. URL</li>
+                <li>Author, B. (Year). Title of the work. Publisher. URL</li>
+                <li>Author, C. (Year). Title of the work. Publisher. URL</li>
+                <li>Author, D. (Year). Title of the work. Publisher. URL</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Career Guidance AI</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

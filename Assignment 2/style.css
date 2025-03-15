@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #ffffff; /* Light text */
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #1f1f1f; /* Header color */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover, .nav-links a.active {
+    color: #00BFFF; /* Highlight color */
+}
+
+.hero {
+    background: linear-gradient(to right, #007BFF, #00BFFF);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.cta-button {
+    background-color: #ff5722; /* Call to action button color */
+    padding: 15px 30px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin: 10px;
+}
+
+.cta-button:hover {
+    background-color: #e64a19; /* Darker shade on hover */
+}
+
+main {
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #00BFFF; /* Bright color for headings */
+}
+
+form {
+    background-color: #1f1f1f; /* Dark background for form */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #2a2a2a; /* Dark input background */
+    color: #ffffff; /* Light text */
+}
+
+button[type="submit"] {
+    background-color: #007BFF; /* Blue button for submission */
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.service-card {
+    background-color: #2a2a2a; /* Dark card background */
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1f1f1f; /* Same as header */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-card {
+        flex: 1 1 calc(50% - 20px); /* Two cards on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .service-card {
+        flex: 1 1 100%; /* Full width cards on small screens */
+    }
+}
